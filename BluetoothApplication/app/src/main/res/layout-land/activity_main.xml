@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    tools:context=".MainActivity"
+    android:transitionGroup="true">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Mail"
+        android:onClick="startData"
+        android:textSize="10dp"
+        android:id="@+id/button6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textSize="10dp"
+
+        android:onClick="save"
+        android:id="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button6" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText2">
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/button2"
+        android:layout_above="@+id/chart_container"
+        android:text="Enter Doctor&apos;s MAIL ID"
+        android:layout_alignEnd="@+id/chart_container"
+        android:layout_toEndOf="@+id/button5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/button6"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button5"
+        android:text="NAME"
+        android:layout_alignEnd="@+id/button5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAW"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_alignBottom="@+id/button5" />
+
+
+
+</RelativeLayout>
