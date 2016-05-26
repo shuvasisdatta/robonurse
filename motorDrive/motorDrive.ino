@@ -1,6 +1,6 @@
 #include <MotorDrive.h>
 
-MotorDrive bot(4, 5, 6, 7, 180, 180);
+MotorDrive bot(4, 5, 6, 7, 255, 255);
 
 void setup() {
   // put your setup code here, to run once:
@@ -21,23 +21,23 @@ void botDrive(){
   switch(dir){
     case 'f':
       bot.forward();
-      delay(500);
+      delay(10);
       break;
     case 'b':
       bot.backward();
-      delay(500);
+      delay(10);
       break;
     case 'l':
       bot.hardLeft();
-      delay(500);
+      delay(10);
       break;
     case 'r':
       bot.hardRight();
-      delay(500);
+      delay(10);
       break;
     case 's':
       bot.stop();
-      delay(500);
+      delay(10);
       break;
     default:
       break;
