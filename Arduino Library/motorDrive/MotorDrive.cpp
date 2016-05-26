@@ -7,6 +7,12 @@
 #include "MotorDrive.h"
 
 MotorDrive::MotorDrive(int pin1, int pin2, int pin3, int pin4, int rpm1, int rpm2){
+	// PinMode Decleration.
+	pinMode(pin1, OUTPUT);
+	pinMode(pin4, OUTPUT);
+	pinMode(pin2, OUTPUT);
+	pinMode(pin3, OUTPUT);
+	
 	dirA = pin1;
 	pwmA = pin2;
 	pwmB = pin3;
@@ -31,7 +37,7 @@ void MotorDrive::backward()
    digitalWrite(dirB, HIGH);
  }
 
-void MotorDrive::hardright()
+void MotorDrive::hardRight()
 {
    analogWrite(pwmA,rpmA);
    analogWrite(pwmB,rpmB);
@@ -39,7 +45,7 @@ void MotorDrive::hardright()
    digitalWrite(dirB, HIGH);
  }
 
- void MotorDrive::hardleft()
+ void MotorDrive::hardLeft()
 {
    analogWrite(pwmA,rpmA);
    analogWrite(pwmB,rpmB);
@@ -60,4 +66,10 @@ void MotorDrive::hardright()
    analogWrite(pwmB,rpmB);
    digitalWrite(dirA, HIGH);
    digitalWrite(dirB, LOW);
+}
+
+void MotorDrive::stop()
+{
+   analogWrite(pwmA,0);
+   analogWrite(pwmB,0);
 }

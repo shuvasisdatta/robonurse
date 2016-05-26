@@ -1,7 +1,7 @@
-MotorDrive   KEYWORD1
-forward    KEYWORD2
-backward     KEYWORD2
-hardLeft     KEYWORD2
-hardRight     KEYWORD2
-softLeft     KEYWORD2
-softRight     KEYWORD2
+MotorDrive	KEYWORD1
+forward		KEYWORD2
+backward	KEYWORD2
+hardLeft	KEYWORD2
+hardRight	KEYWORD2
+softLeft    KEYWORD2
+softRight   KEYWORD2
