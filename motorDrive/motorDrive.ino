@@ -4,7 +4,7 @@ MotorDrive bot(4, 5, 6, 7, 255, 255);
 
 void setup() {
   // put your setup code here, to run once:
-  Serial1.begin(38400);
+  Serial.begin(38400);
 }
 
 void loop() {
@@ -15,8 +15,8 @@ void loop() {
 
 void botDrive(){
   char dir;
-  if(Serial1.available()){
-    dir = Serial1.read();
+  if(Serial.available()){
+    dir = Serial.read();
   }
   switch(dir){
     case 'f':

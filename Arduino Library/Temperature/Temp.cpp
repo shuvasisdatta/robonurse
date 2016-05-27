@@ -15,7 +15,7 @@ Temp::Temp(int pin)
 void Temp::showTemp()
 {
   Serial.print("Temperature : ");
-  float temperature = (float)( 5 * analogRead( _pin ) * 100) / 1024;  
+  float temperature = (float)(5 * analogRead( _pin ) * 100) / 1024;  
   Serial.print( temperature );
   Serial.println(" C");
   delay(10);
@@ -23,6 +23,6 @@ void Temp::showTemp()
 
 float Temp::getTemp()
 {
-  float temperature = (float)( 5 * analogRead( _pin ) * 100) / 1024;  
+  float temperature = (float)(5 * analogRead( _pin ) * 100) / 1024;  
   return temperature;
 }
